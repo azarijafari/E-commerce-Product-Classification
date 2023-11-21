@@ -101,10 +101,10 @@ Following these adjustments, we combined the four "product-data" files into one 
 ![Final Dataset](images/dataset.PNG)
 
 The `"category"` column, considered as the target for prediction in this project, indicates that the resulting dataset comprises 870 samples of "Jewelry" and 884 samples of "Kitchen." This demonstrates a balanced distribution in the dataset.
-![Category Statistics](images/category statistics.png)
+![Category Statistics](images/category%20statistics.png)
 
 The `"rating"` column, representing the user-assigned rating to each product, which includes one of the numbers {1, 2, 3, 4, 5}.
-![Rating Statistics](images/rating statistics.PNG)
+![Rating Statistics](images/rating%20statistics.PNG)
 ### 2.3. Data Preprocessing
 
 In this stage, we clean the text within the `"product_title"` and `"review_text"` columns to prepare it for the next step, which involves data preparation for model training. The techniques employed in this section include:
