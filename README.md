@@ -176,8 +176,10 @@ In this research, to predict the category based on the generated representations
 Given the limited number of samples and to enhance model training quality, we used the Cross-Validation method for model tuning. Considering that our data is balanced in two classes, we utilized accuracy as the evaluation metric for cross-validation. The table below reports the evaluation results of cross-validation and the final model testing. The best result belongs to the Logistic Regression method, achieving an accuracy of 96.30%.
 …………………………….
 The confusion matrices related to the evaluation results of these models are provided in the figures below. The high performance of the Logistic Regression method is evident in both classes.
-…………………………….
+
+![Confusion Matrix](images/confusion%20matrix.png)
+
 ## 4. Model Comparison
 In the following plots, the six employed models are compared based on evaluation metrics such as Accuracy, Precision, Recall, and F1-Score. These visuals provide an overview of the results obtained from this research.
-……………………………
+![Models Comparison](images/models%20comparison.png)
 ## 5. Conclusion
