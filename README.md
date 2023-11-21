@@ -52,6 +52,14 @@ Each of the features in these two file types includes the following information:
 ### Data Integration
 
 In this stage, we combine individual datasets and create a final dataset for use in subsequent steps. The initial dataset consists of four files containing product information and four files containing user feedback, as described below.
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
 <table class="tg">
 <thead>
   <tr>
