@@ -139,19 +139,19 @@ Normalizing the numbers in this column in a consistent manner. Instead of the nu
 These two columns contain text, and the texts have varying token counts. Here, we concatenate these two columns for each text sample with a space in between and tokenize them. The resulting texts have a minimum token count of 5 and a maximum token count of 623. The distribution of tokens in the texts can be observed in the figure below.
 …………………………………………..
 
-**- Handling Outlier Data**
+- **Handling Outlier Data**
 
 In this figure, it is evident that we encounter some outlier data points with a higher token count than the mode of the samples. An important method in text processing to handle outlier data is the use of the Bag of Words (BOW) technique. Instead of employing embeddings for individual words, BOW calculates an embedding vector for the entire text, usually by taking the average of the embedding vectors for the words in that text. Given that machine learning methods are employed in this project and a consistent vector is required for each sample, we utilize this approach.
 
-**- Handling Out of Vector Words**
+- **Handling Out of Vector Words**
 
 The embedding method employed in this research is fastText, developed by Meta. This method has shown promising results in various studies, allowing us to determine the embedding length as a hyperparameter, considering it for model tuning. Additionally, this method provides the ability to represent out-of-vector (oov) words, for which there is no default embedding, by generating suitable embeddings using bigrams of that word. This capability is crucial in covering new words to provide a better representation of the entire sentence to the model.
 
-**- Building Word Vectors**
+- **Building Word Vectors**
 
 For each text, we first obtain the embedding for each token using the fastText method and consider the average of the embeddings for each text as the text representation. It's worth noting that we experimented with several embedding lengths and ultimately settled on a length of 64. Afterward, we extract the normalized rating for each sample from the "rating" column and concatenate it to the end of this vector. In the end, for each sample from the final data, we have a numerical vector of 65 dimensions and a category of 0 or 1.
 
-**- Data Splitting**
+- **Data Splitting**
 
 Given that the total number of samples is 1754, we end up with a matrix (1754 * 65) for X_data and a vector (1 * 1754) for y_data. Afterward, we randomly split these data into two parts at a ratio of 80% and 20%: (X_train, y_train) with 1403 samples and (X_test, y_test) with 351 samples. It is noteworthy that in this research, we utilize the cross-validation method for model tuning, which is highly suitable for cases with limited data. The class distribution for the two parts of data is provided in the table below.
 ………………………………….
