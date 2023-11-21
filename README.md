@@ -27,9 +27,9 @@ Project Stracture
     │         ├── Building Word Vectors	
     │         └── Data Spliting
     ├── 3. Model Training and Evaluation         
-    │   ├── 3.1. Model Tuning by Cross Validation
-    │   ├── 3.2. Fitting Model on Train Data with Best Hyperparameters	
-    │   └── 3.3. Model Evaluation                             
+    │   ├── Model Tuning by Cross Validation
+    │   ├── Fitting Model on Train Data with Best Hyperparameters	
+    │   └── Model Evaluation                             
     ├── 4. Models' Comparison                                    
     └── 5. Conclusion
 ```
@@ -163,11 +163,11 @@ Given that the total number of samples is 1754, we end up with a matrix (1754 * 
 
 ## 3. Model Training and Evaluation
 
-In this research, to predict the category based on the generated representations, we employed six machine learning models. The utilized models include Logistic Regression, Gaussian Naive Bayes, Random Forest, Decision Tree, K-Nearest Neighbors, and Support Vector Machines (SVM). The following steps were taken:
+In this research, to predict the category based on the generated representations, we employed six machine learning models. The utilized models include *Logistic Regression*, *Gaussian Naive Bayes*, *Random Forest*, *Decision Tree*, *K-Nearest Neighbors*, and *Support Vector Machines (SVM)*. The following steps were taken:
 
-### 3.1. Model Tuning with Cross-Validation
-### 3.2. Fitting Model on Train Data with Best Hyperparameters
-### 3.3. Model Evaluation on Test Data
+- **Model Tuning with Cross-Validation**
+- **Fitting Model on Train Data with Best Hyperparameters**
+- **Model Evaluation on Test Data**
 
 Given the limited number of samples and to enhance model training quality, we used the Cross-Validation method for model tuning. Considering that our data is balanced in two classes, we utilized accuracy as the evaluation metric for cross-validation. The table below reports the evaluation results of cross-validation and the final model testing. The best result belongs to the Logistic Regression method, achieving an accuracy of 96.30%.
 …………………………….
