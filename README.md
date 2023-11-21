@@ -21,7 +21,7 @@ Project Stracture
     │   └── 2.4. Data Preparation for model training                              
     │	   ├── 2.4.1. Category Column          
     │      ├── 2.4.2. Rating Column
-    │      └── 2.4.3. Review_Text, Product_Title Columns
+    │      └── 2.4.3. Review_Text, and Product_Title Columns
     │	      ├── Handling Outlier Data          
     │         ├── Handling Out of Vector Words 
     │         ├── Building Word Vectors	
