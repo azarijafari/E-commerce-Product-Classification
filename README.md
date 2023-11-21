@@ -21,7 +21,7 @@ Project Stracture
     │   └── 2.4. Data Preparation for model training                              
     │	   ├── 2.4.1. Category Column          
     │      ├── 2.4.2. Rating Column
-    │      └── 2.4.3. Review-Text, Product_Title Columns
+    │      └── 2.4.3. Review_Text, Product_Title Columns
     │	      ├── Handling Outlier Data          
     │         ├── Handling Out of Vector Words 
     │         ├── Building Word Vectors	
@@ -37,10 +37,10 @@ Project Stracture
 ## 2. Data Management
 In this section, we systematically process initial data to obtain suitable data for training models.
 ### 2.1. Initial dataset
-The data for this project pertains to an online store that offers products in two categories: kitchen and jewelry. The extracted dataset comprises 1754 samples stored in two types of files, each linked through the "id" column. These two types of files are as follows:
+The data for this project pertains to an online store that offers products in two categories: kitchen and jewelry. The extracted dataset comprises 1754 samples stored in two types of files, each linked through the `"id"` column. These two types of files are as follows:
 
-1. Four files containing product information (id, category, product_title).
-2. Four files containing user feedback (id, rating, review_text).
+1. Four files containing product information (`id`, `category`, `product_title`).
+2. Four files containing user feedback (`id`, `rating`, `review_text`).
 
 Each of the features in these two file types includes the following information:
 
@@ -92,21 +92,21 @@ In this stage, we combine individual datasets and create a final dataset for use
 
 In the process of combining these datasets, two issues were identified:
 
-1. In the "review-2" file, the order of the two columns, "rating" and "id," was incorrect. This problem was resolved by swapping the positions of these two columns.
+1. In the "review-2" file, the order of the two columns, `"rating"` and `"id"` was incorrect. This problem was resolved by swapping the positions of these two columns.
    
-2. In the "product-data-4" file, the word "Kitchen" in the "category" column was mistakenly spelled as "ktchen," which has been corrected.
+2. In the "product-data-4" file, the word "Kitchen" in the `"category"` column was mistakenly spelled as "ktchen," which has been corrected.
 
-Following these adjustments, we combined the four "product-data" files into one dataset and the four "review" files into another dataset. Subsequently, using the unique "id" column in each row, we merged the two resulting datasets, creating a final consolidated dataset. Below, you can find a preview of five rows from the final dataset.
+Following these adjustments, we combined the four "product-data" files into one dataset and the four "review" files into another dataset. Subsequently, using the unique `"id"` column in each row, we merged the two resulting datasets, creating a final consolidated dataset. Below, you can find a preview of five rows from the final dataset.
 …………………………………
 
-The "category" column, considered as the target for prediction in this project, indicates that the resulting dataset comprises 870 samples of "Jewelry" and 884 samples of "Kitchen." This demonstrates a balanced distribution in the dataset.
+The `"category"` column, considered as the target for prediction in this project, indicates that the resulting dataset comprises 870 samples of "Jewelry" and 884 samples of "Kitchen." This demonstrates a balanced distribution in the dataset.
 ………………………………
 
-The "rating" column, representing the user-assigned rating to each product, which includes one of the numbers {1, 2, 3, 4, 5}.
+The `"rating"` column, representing the user-assigned rating to each product, which includes one of the numbers {1, 2, 3, 4, 5}.
 …………………………….
 ### 2.3. Data Preprocessing
 
-In this stage, we clean the text within the "product_title" and "review_text" columns to prepare it for the next step, which involves data preparation for model training. The techniques employed in this section include:
+In this stage, we clean the text within the `"product_title"` and `"review_text"` columns to prepare it for the next step, which involves data preparation for model training. The techniques employed in this section include:
 
 - Text lowercase
 - Cleaning the text from emails, symbols, and web links
@@ -116,11 +116,11 @@ In this stage, we clean the text within the "product_title" and "review_text" co
 
 You can see an example of this data cleaning process below.
 
-For the "product_title" column:
+For the `"product_title"` column:
 Before cleaning: Silver-tone Cross With Caduceus Emblem Nurse Pen - Perfect Nurse Gift
 After Cleaning: silver tone cross with caduceus emblem nurse pen perfect nurse gift
 
-For the "review_text" column:
+For the `"review_text"` column:
 Before cleaning: Excellent pan - my daughter just made madeleines - yum!
 After cleaning: excellent pan my daughter just made madeleines yum
 
@@ -149,7 +149,7 @@ The embedding method employed in this research is fastText, developed by Meta. T
 
 - **Building Word Vectors**
 
-For each text, we first obtain the embedding for each token using the fastText method and consider the average of the embeddings for each text as the text representation. It's worth noting that we experimented with several embedding lengths and ultimately settled on a length of 64. Afterward, we extract the normalized rating for each sample from the "rating" column and concatenate it to the end of this vector. In the end, for each sample from the final data, we have a numerical vector of 65 dimensions and a category of 0 or 1.
+For each text, we first obtain the embedding for each token using the fastText method and consider the average of the embeddings for each text as the text representation. It's worth noting that we experimented with several embedding lengths and ultimately settled on a length of 64. Afterward, we extract the normalized rating for each sample from the `"rating"` column and concatenate it to the end of this vector. In the end, for each sample from the final data, we have a numerical vector of 65 dimensions and a category of 0 or 1.
 
 - **Data Splitting**
 
