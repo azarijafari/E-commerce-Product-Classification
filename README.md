@@ -101,10 +101,12 @@ Following these adjustments, we combined the four "product-data" files into one 
 ![Final Dataset](images/dataset.PNG)
 
 The `"category"` column, considered as the target for prediction in this project, indicates that the resulting dataset comprises 870 samples of "Jewelry" and 884 samples of "Kitchen." This demonstrates a balanced distribution in the dataset.
+
 ![Category Statistics](images/category%20statistics.png)
 
 The `"rating"` column, representing the user-assigned rating to each product, which includes one of the numbers {1, 2, 3, 4, 5}.
-![Rating Statistics](images/rating%20statistics.PNG)
+
+![Rating Statistics](images/rating%20statistics.png)
 ### 2.3. Data Preprocessing
 
 In this stage, we clean the text within the `"product_title"` and `"review_text"` columns to prepare it for the next step, which involves data preparation for model training. The techniques employed in this section include:
@@ -138,7 +140,8 @@ Normalizing the numbers in this column in a consistent manner. Instead of the nu
 
 #### 2.4.3. "product_title" and "review_text" Columns
 These two columns contain text, and the texts have varying token counts. Here, we concatenate these two columns for each text sample with a space in between and tokenize them. The resulting texts have a minimum token count of 5 and a maximum token count of 623. The distribution of tokens in the texts can be observed in the figure below.
-…………………………………………..
+
+![Tokens Statistics](images/tokens%20statistics.png)
 
 - **Handling Outlier Data**
 
