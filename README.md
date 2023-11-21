@@ -52,7 +52,41 @@ Each of the features in these two file types includes the following information:
 ### Data Integration
 
 In this stage, we combine individual datasets and create a final dataset for use in subsequent steps. The initial dataset consists of four files containing product information and four files containing user feedback, as described below.
-………………………….
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky" colspan="2">   <br>Product   information   </th>
+    <th class="tg-0pky" colspan="2">   <br>User’s   Feedback   </th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">   <br>Product-data-0   </td>
+    <td class="tg-0pky">   <br>500   </td>
+    <td class="tg-0pky">   <br>Review-0   </td>
+    <td class="tg-0pky">   <br>500   </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">   <br>Product-data-1   </td>
+    <td class="tg-0pky">   <br>500   </td>
+    <td class="tg-0pky">   <br>Review-1   </td>
+    <td class="tg-0pky">   <br>500   </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">   <br>Product-data-2   </td>
+    <td class="tg-0pky">   <br>500   </td>
+    <td class="tg-0pky">   <br>Review-2   </td>
+    <td class="tg-0pky">   <br>500   </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">   <br>Product-data-3   </td>
+    <td class="tg-0pky">   <br>254   </td>
+    <td class="tg-0pky">   <br>Review-3   </td>
+    <td class="tg-0pky">   <br>254   </td>
+  </tr>
+</tbody>
+</table>
+
 
 In the process of combining these datasets, two issues were identified:
 
