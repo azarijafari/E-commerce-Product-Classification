@@ -177,12 +177,12 @@ Given the limited number of samples and to enhance model training quality, we us
 
 |          |     Model                          |     CV Acc       |     Accuracy     |     Precision    |     Recall       |     F1-Score     |
 |----------|------------------------------------|------------------|------------------|------------------|------------------|------------------|
-|     1    | **    Logistic Regression   **     | **    94.30   ** | **    96.30   ** | **    95.36   ** | **    97.88   ** | **    96.61   ** |
-|     2    | **    Gaussian Naive Bayes   **    |     80.34        |     80.34        |     77.78        |     88.89        |     82.96        |
-|     3    | **    Random Forest   **           |     86.31        |     87.18        |     87.89        |     88.36        |     88.13        |
-|     4    | **    Decision Tree   **           |     82.75        |     84.90        |     86.56        |     85.19        |     85.87        |
-|     5    | **    K-Nearest Neighbors   **     |     80.25        |     83.19        |     84.57        |     84.13        |     84.35        |
-|     6    | **    Support Vector Machines   ** |     85.17        |     86.32        |     84.39        |     91.53        |     87.82        |
+|     1    |     **Logistic Regression**        |     **94.30**    |     **96.30**    |     **95.36**    |     **97.88**    |     **96.61**    |
+|     2    |     **Gaussian Naive Bayes**       |     80.34        |     80.34        |     77.78        |     88.89        |     82.96        |
+|     3    |     **Random Forest**              |     86.31        |     87.18        |     87.89        |     88.36        |     88.13        |
+|     4    |     **Decision Tree**              |     82.75        |     84.90        |     86.56        |     85.19        |     85.87        |
+|     5    |     **K-Nearest Neighbors**        |     80.25        |     83.19        |     84.57        |     84.13        |     84.35        |
+|     6    |     **Support Vector Machines**    |     85.17        |     86.32        |     84.39        |     91.53        |     87.82        |
 
 The confusion matrices related to the evaluation results of these models are provided in the figures below. The high performance of the Logistic Regression method is evident in both classes.
 
