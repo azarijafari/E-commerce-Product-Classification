@@ -10,6 +10,7 @@ This project is designed as an educational initiative, focusing on the implement
 Also, the initial data and the final data generated in this project are stored in the `data` folder.
 
 To advance the project objectives, we have designed a pipeline, the overall schema of which is depicted in the figure below.
+
 ![Project Pipeline](images/pipeline.jpg)
 
 ### 1.2. Research Structure
