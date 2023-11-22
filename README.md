@@ -28,7 +28,7 @@ Project Stracture
     │	      ├── Handling Outlier Data          
     │         ├── Handling Out of Vector Words 
     │         ├── Building Word Vectors	
-    │         └── Data Spliting
+    │         └── Data Splitting
     ├── 3. Model Training and Evaluation         
     │   ├── Model Tuning by Cross Validation
     │   ├── Fitting Model on Train Data with Best Hyperparameters	
