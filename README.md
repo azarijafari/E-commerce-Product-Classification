@@ -4,7 +4,7 @@
 In today's digital landscape, data mining and machine learning techniques are employed to enhance the performance and user experience of online stores. Data mining is utilized to analyze diverse data related to products, customer needs, and past purchasing behaviors, aiming to identify hidden patterns and correlations within the data. This data analysis through mining contributes to the improvement of marketing strategies and effective decision-making for content management and product categorization.
 
 ### 1.1. Project Overview
-This project is designed as an educational initiative, focusing on the implementation of machine learning techniques to build an intelligent classification system based on product features and user feedback. These techniques include the use of classification algorithms such as *Logistic Regression*, *Gaussian Naive Bayes*, *Random Forest*, *Decision Tree*, *K-Nearest Neighbors*, and *Support Vector Machines (SVM)*. By training on existing data, these algorithms can automatically categorize products into different classes, enhancing the overall shopping experience. This project plays a crucial role in increasing classification accuracy and boosting the store's capabilities in content generation and systematic product uploading on the e-commerce website.
+This project is designed as an educational initiative, focusing on the implementation of machine learning techniques to build an intelligent classification system based on product features and user feedback. These techniques include the use of classification algorithms such as *Logistic Regression*, *Gaussian Naive Bayes*, *Random Forest*, *Decision Tree*, *K-Nearest Neighbors*, and *Support Vector Machines (SVM)*. By training on existing data, these algorithms can automatically categorize products into different classes, enhancing the overall shopping experience. This project plays a crucial role in increasing classification accuracy and boosting the store's capabilities in content generation and systematic product uploading on the e-commerce website. The results showed that the Logistic Regression model outperforms others with an accuracy of 96.30%.
 
 To advance the project objectives, we have designed a pipeline, the overall schema of which is depicted in the figure below.
 ……………………………….
@@ -190,5 +190,8 @@ The confusion matrices related to the evaluation results of these models are pro
 
 ## 4. Model Comparison
 In the following plots, the six employed models are compared based on evaluation metrics such as Accuracy, Precision, Recall, and F1-Score. These visuals provide an overview of the results obtained from this research.
+
 ![Models Comparison](images/models%20comparison.png)
+
 ## 5. Conclusion
+In this scientific project, we utilized data mining and machine learning techniques to enhance the performance and user experience in an online store. Through a thorough analysis of textual and numerical data related to products, we developed an intelligent classification system based on product features and user feedback. This system employs various machine learning algorithms, including *Logistic Regression*, *Gaussian Naive Bayes*, *Random Forest*, *Decision Tree*, *K-Nearest Neighbors*, and *Support Vector Machines (SVM)*. The results showed that the Logistic Regression model outperforms others with an accuracy of **96.30%**. This research not only aims to improve product classification accuracy and increase customer satisfaction but also serves as a valuable tool for content management in the E-commerce platform.
