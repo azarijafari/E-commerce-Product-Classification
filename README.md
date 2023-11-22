@@ -6,6 +6,9 @@ In today's digital landscape, data mining and machine learning techniques are em
 ### 1.1. Project Overview
 This project is designed as an educational initiative, focusing on the implementation of machine learning techniques to build an intelligent classification system based on product features and user feedback. These techniques include the use of classification algorithms such as *Logistic Regression*, *Gaussian Naive Bayes*, *Random Forest*, *Decision Tree*, *K-Nearest Neighbors*, and *Support Vector Machines (SVM)*. By training on existing data, these algorithms can automatically categorize products into different classes, enhancing the overall shopping experience. This project plays a crucial role in increasing classification accuracy and boosting the store's capabilities in content generation and systematic product uploading on the e-commerce website. The results showed that the Logistic Regression model outperforms others with an accuracy of 96.30%.
 
+```
+Note: All project steps are implemented in the notebook in this repository named "Product Classification.ipynb" in the Python programming language. Also, the initial data and the final data generated in this project are stored in the data folder.
+```
 To advance the project objectives, we have designed a pipeline, the overall schema of which is depicted in the figure below.
 ……………………………….
 
@@ -195,3 +198,6 @@ In the following plots, the six employed models are compared based on evaluation
 
 ## 5. Conclusion
 In this scientific project, we utilized data mining and machine learning techniques to enhance the performance and user experience in an online store. Through a thorough analysis of textual and numerical data related to products, we developed an intelligent classification system based on product features and user feedback. This system employs various machine learning algorithms, including *Logistic Regression*, *Gaussian Naive Bayes*, *Random Forest*, *Decision Tree*, *K-Nearest Neighbors*, and *Support Vector Machines (SVM)*. The results showed that the Logistic Regression model outperforms others with an accuracy of **96.30%**. This research not only aims to improve product classification accuracy and increase customer satisfaction but also serves as a valuable tool for content management in the E-commerce platform.
+
+## Requirements
+* Python3
