@@ -168,10 +168,33 @@ For each text, we first obtain the embedding for each token using the fastText m
 
 Given that the total number of samples is 1754, we end up with a matrix (1754 * 65) for X_data and a vector (1 * 1754) for y_data. Afterward, we randomly split these data into two parts at a ratio of 80% and 20%: (X_train, y_train) with 1403 samples and (X_test, y_test) with 351 samples. It is noteworthy that in this research, we utilize the cross-validation method for model tuning, which is highly suitable for cases with limited data. The class distribution for the two parts of data is provided in the table below.
 
-|               | Jewelry | Kitchen |     All     |
-|---------------|---------|---------|-------------|
-| **Train**     |   708   |   695   |    1403     |
-| **Test**      |   162   |   189   |    351      |
+<table>
+<thead>
+  <tr>
+    <th rowspan="2"></th>
+    <th colspan="3">Sample Count</th>
+  </tr>
+  <tr>
+    <th>Jewelry</th>
+    <th>Kitchen</th>
+    <th>ALL</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Train</td>
+    <td>708</td>
+    <td>695</td>
+    <td>1403</td>
+  </tr>
+  <tr>
+    <td>Test</td>
+    <td>162</td>
+    <td>189</td>
+    <td>351</td>
+  </tr>
+</tbody>
+</table>
 
 
 ## 3. Model Training and Evaluation
